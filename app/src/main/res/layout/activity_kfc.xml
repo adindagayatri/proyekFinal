@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".KFC">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            tools:context=".KFC">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_margin="30dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                app:cardBackgroundColor="@color/white">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/kfc"
+                    android:maxHeight="500dp">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:onClick="placeOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Place Orders">
+            </Button>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+
+                <ImageView
+                    android:id="@+id/menu1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/chicken"></ImageView>
+
+                <TextView
+                    android:id="@+id/nama1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Chicken 5pcs"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/menu1"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/rp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Rp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toStartOf="@+id/nama1"
+                    app:layout_constraintTop_toBottomOf="@+id/nama1">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="105000"
+                    android:id="@+id/harga1"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toEndOf="@+id/rp1"
+                    app:layout_constraintTop_toBottomOf="@+id/nama1">
+
+                </TextView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="216dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Add"
+                    android:onClick="add_to_list"
+                    android:id="@+id/button1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/menu1"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </Button>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/menu2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/fries"></ImageView>
+
+                <TextView
+                    android:id="@+id/nama2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="French Fries"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/menu2"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/rp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Rp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toStartOf="@+id/nama2"
+                    app:layout_constraintTop_toBottomOf="@+id/nama2">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/harga2"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="25000"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toEndOf="@+id/rp2"
+                    app:layout_constraintTop_toBottomOf="@+id/nama2">
+
+                </TextView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="216dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Add"
+                    android:onClick="add_to_list"
+                    android:id="@+id/button2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/menu2"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </Button>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/menu3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/burger"></ImageView>
+
+                <TextView
+                    android:id="@+id/nama3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Burger Combo"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/menu3"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/rp3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Rp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toStartOf="@+id/nama3"
+                    app:layout_constraintTop_toBottomOf="@+id/nama3">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="42000"
+                    android:id="@+id/harga3"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toEndOf="@+id/rp3"
+                    app:layout_constraintTop_toBottomOf="@+id/nama3">
+
+                </TextView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="216dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Add"
+                    android:onClick="add_to_list"
+                    android:id="@+id/button3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/menu3"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </Button>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

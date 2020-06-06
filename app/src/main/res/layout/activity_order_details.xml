@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderDetails"
+    android:background="@color/colorAccent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/yourOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="54dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="YOUR ORDER"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+        android:id="@+id/orderList"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:text="Order Here"
+                android:layout_below="@id/yourOrder"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourOrder">
+
+    </TextView>
+
+            <TextView
+                android:id="@+id/tagList"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yourOrder"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="28dp"
+                android:layout_toEndOf="@+id/orderList"
+                android:layout_toRightOf="@id/orderList"
+                android:background="@color/white"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="5dp"
+                android:text="Price Tag Here"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/orderList"
+                app:layout_constraintTop_toBottomOf="@+id/yourOrder">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/priceList"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/white"
+                android:layout_below="@id/orderList"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp"
+                android:text="Price Here"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <Button
+                android:id="@+id/successButton"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@id/tagList"
+                android:background="@color/colorPrimaryDark"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/priceList"
+                android:onClick="successPage"
+                android:padding="10dp"
+                android:text="Place Order"
+                android:textColor="@color/white"></Button>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

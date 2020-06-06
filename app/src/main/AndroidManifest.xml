@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.foodcategory">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Breadtalk"></activity>
+        <activity android:name=".JCO" />
+        <activity android:name=".Starbucks" />
+        <activity android:name=".Chatime" />
+        <activity android:name=".Excel" />
+        <activity android:name=".Nippon" />
+        <activity android:name=".Marugame" />
+        <activity android:name=".Ichiban" />
+        <activity android:name=".Majong" />
+        <activity android:name=".Hapcap" />
+        <activity android:name=".Golden" />
+        <activity android:name=".Bao" />
+        <activity android:name=".Eat" />
+        <activity android:name=".ItalianBis" />
+        <activity android:name=".Lorenzo" />
+        <activity android:name=".Bono" />
+        <activity android:name=".KFC" />
+        <activity android:name=".JOLI" />
+        <activity android:name=".BK" />
+        <activity android:name=".AW" />
+        <activity android:name=".detailCategory" />
+        <activity android:name=".successActivity" />
+        <activity android:name=".OrderDetails" />
+        <activity android:name=".mcDonalds" />
+        <activity android:name=".bcActivity" />
+        <activity android:name=".beverageActivity" />
+        <activity android:name=".japanfoodActivity" />
+        <activity android:name=".italianActivity" />
+        <activity android:name=".chineseActivity" />
+        <activity android:name=".fastfoodActivity" />
+        <activity android:name=".splashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

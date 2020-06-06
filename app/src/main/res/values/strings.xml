@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">foodCategory</string>
+    <string-array name="fastfood_chain">
+        <item>AW SUNSET ROAD</item>
+        <item>BURGER KING SANUR</item>
+        <item>JOLLIBEE SUNSET ROAD</item>
+        <item>KFC SANUR</item>
+        <item>McDONALDS SANUR</item>
+    </string-array>
+    <string-array name="fastfood_address">
+        <item>Jl Raya Sunset Road No. 123</item>
+        <item>Jl Raya Sanur No. 1</item>
+        <item>Jl Raya Sunset Road A</item>
+        <item>Jl Raya Sanur No. 30A </item>
+        <item>Jl Raya Sanur No. 30B</item>
+    </string-array>
+    <string-array name="rating">
+        <item>4.5 stars out of 5 stars</item>
+        <item>4 stars out of 5 stars</item>
+        <item>3.8 stars out of 5 stars</item>
+        <item>3.5 stars out of 5 stars</item>
+        <item>5 stars out of 5 stars</item>
+    </string-array>
+
+
+    <string-array name="chinesefood_resto">
+        <item>BAO NUSA DUA</item>
+        <item>GOLDEN DRAGON KUTA</item>
+        <item>HAPPY CHAPPY KUTA</item>
+        <item>MAJONG CANGGU</item>
+    </string-array>
+    <string-array name="chinesefood_address">
+        <item>Jl Gusti Ngurah Rai No. 121</item>
+        <item>Jl Raya Kuta No. 1X</item>
+        <item>Jl Raya Kuta No. 10A</item>
+        <item>Jl Raya Canggu Utara No. 14A </item>
+    </string-array>
+    <string-array name="rating_cf">
+        <item>3.5 stars out of 5 stars</item>
+        <item>4.6 stars out of 5 stars</item>
+        <item>4.0 stars out of 5 stars</item>
+        <item>4.5 stars out of 5 stars</item>
+    </string-array>
+
+
+    <string-array name="italianfood_resto">
+        <item>BONO ITALIAN KUTA</item>
+        <item>LORENZO TEUKU UMAR</item>
+        <item>ITALIAN BISTRO 1</item>
+        <item>EATALOTTI KUTA</item>
+    </string-array>
+    <string-array name="italianfood_address">
+        <item>Jl Raya Kuta No. 121</item>
+        <item>Jl Teuku Umar Timur No. 1X</item>
+        <item>Jl Teuku Umar Timur No. 10A</item>
+        <item>Jl Raya Kuta No. 14A </item>
+    </string-array>
+    <string-array name="rating_if">
+        <item>3.8 stars out of 5 stars</item>
+        <item>4.0 stars out of 5 stars</item>
+        <item>4.3 stars out of 5 stars</item>
+        <item>3.0 stars out of 5 stars</item>
+    </string-array>
+
+    <string-array name="japanesefood_name">
+        <item>ICHIBAN SUSHI GALERIA</item>
+        <item>MARUGAME UDON KUTA</item>
+        <item>NIPPON SIMPANG SIUR</item>
+    </string-array>
+    <string-array name="japanesefood_address">
+        <item>Jl Sunset Road No. 121 Ruko A23</item>
+        <item>Jl Sunset Road No. 121 Ruko A40</item>
+        <item>Jl Raya Simpang Siur No. 11</item>
+    </string-array>
+    <string-array name="rating_jf">
+        <item>4.8 stars out of 5 stars</item>
+        <item>4.0 stars out of 5 stars</item>
+        <item>3.6 stars out of 5 stars</item>
+    </string-array>
+
+    <string-array name="beverageName">
+        <item>EXCELSO GALERIA</item>
+        <item>CHATIME GALERIA</item>
+        <item>STARBUCKS KUTA</item>
+    </string-array>
+    <string-array name="beverageAddress">
+        <item>Jl Sunset Road No. 121 Ruko A20</item>
+        <item>Jl Sunset Road No. 121 Ruko A21</item>
+        <item>Jl Sunset Road No. 11</item>
+    </string-array>
+    <string-array name="rating_bv">
+        <item>3.8 stars out of 5 stars</item>
+        <item>4.6 stars out of 5 stars</item>
+        <item>4.8 stars out of 5 stars</item>
+    </string-array>
+
+    <string-array name="bcName">
+        <item>JCO GALERIA</item>
+        <item>BREADTALK GALERIA</item>
+    </string-array>
+    <string-array name="bcAddress">
+        <item>Jl Sunset Road No. 121 Ruko C10</item>
+        <item>Jl Sunset Road No. 121 Ruko C11</item>
+    </string-array>
+    <string-array name="rating_bc">
+        <item>4.8 stars out of 5 stars</item>
+        <item>4.6 stars out of 5 stars</item>
+    </string-array>
+</resources>

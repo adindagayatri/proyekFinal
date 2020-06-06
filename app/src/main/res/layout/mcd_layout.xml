@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".mcDonalds">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            tools:context=".mcDonalds">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_margin="30dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                app:cardBackgroundColor="@color/white">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/mcd"
+                    android:maxHeight="500dp">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:onClick="placeOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Place Orders">
+            </Button>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+
+                <ImageView
+                    android:id="@+id/cheeseBurger"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/burger"></ImageView>
+
+                <TextView
+                    android:id="@+id/cheeseburgerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Cheese Burger"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/cheeseBurger"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/cheeseburgerRp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Rp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toStartOf="@+id/cheeseburgerName"
+                    app:layout_constraintTop_toBottomOf="@+id/cheeseburgerName">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="34000"
+                    android:id="@+id/cheeseburgerPrice"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toEndOf="@+id/cheeseburgerRp"
+                    app:layout_constraintTop_toBottomOf="@+id/cheeseburgerName">
+
+                </TextView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="216dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Add"
+                    android:onClick="add_to_list"
+                    android:id="@+id/cheeseburgerButton"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/cheeseBurger"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </Button>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/mcSpicy"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/chicburg"></ImageView>
+
+                <TextView
+                    android:id="@+id/mcspicyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="McSpicy Burger"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/mcSpicy"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/mcspicyRp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Rp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toStartOf="@+id/mcspicyName"
+                    app:layout_constraintTop_toBottomOf="@+id/mcspicyName">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/mcspicyPrize"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="40000"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toEndOf="@+id/mcspicyRp"
+                    app:layout_constraintTop_toBottomOf="@+id/mcspicyName">
+
+                </TextView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="216dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Add"
+                    android:onClick="add_to_list"
+                    android:id="@+id/mcspicyButton"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/mcSpicy"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </Button>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/spicy"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/chicken"></ImageView>
+
+                <TextView
+                    android:id="@+id/spicyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Spicy Chicken"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/spicy"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/spicyRp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Rp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toStartOf="@+id/spicyName"
+                    app:layout_constraintTop_toBottomOf="@+id/spicyName">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="32000"
+                    android:id="@+id/spicyPrice"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toEndOf="@+id/spicyRp"
+                    app:layout_constraintTop_toBottomOf="@+id/spicyName">
+
+                </TextView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="216dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Add"
+                    android:onClick="add_to_list"
+                    android:id="@+id/spicyButton"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/spicy"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </Button>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/krispy"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/chicken"></ImageView>
+
+                <TextView
+                    android:id="@+id/krispyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Krispy Chicken"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/krispy"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/krispyRp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Rp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toStartOf="@+id/krispyName"
+                    app:layout_constraintTop_toBottomOf="@+id/krispyName">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="32000"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/krispyPrice"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toEndOf="@+id/krispyRp"
+                    app:layout_constraintTop_toBottomOf="@+id/krispyName">
+
+                </TextView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="216dp"
+                    android:layout_marginEnd="10dp"
+                    android:id="@+id/krispyButton"
+                    android:text="Add"
+                    android:onClick="add_to_list"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/krispy"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </Button>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <ImageView
+                    android:id="@+id/mcflurry"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mcflurry"></ImageView>
+
+                <TextView
+                    android:id="@+id/mcflurryName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="McFlurry Oreo"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/mcflurry"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/mcflurryRp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Rp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toStartOf="@+id/mcflurryName"
+                    app:layout_constraintTop_toBottomOf="@+id/mcflurryName">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="12000"
+                    android:id="@+id/mcflurryPrice"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toEndOf="@+id/mcflurryRp"
+                    app:layout_constraintTop_toBottomOf="@+id/mcflurryName">
+
+                </TextView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="216dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Add"
+                    android:onClick="add_to_list"
+                    android:id="@+id/mcflurryButton"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/mcflurry"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </Button>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
